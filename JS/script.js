@@ -1,3 +1,5 @@
+nombreUsuario=prompt('Ingrese su nombre');
+
 const todos = [];
 class participante{
     constructor (nombre, apellido){
@@ -66,6 +68,7 @@ start.addEventListener('click',function(e){
             limpiarGanador.remove();
         }
     }, 5000);
+    alert('Muchas gracias por participar, '+nombreUsuario);
 })
 // FUNCION PARA RESETEAR EL SORTEO
 let reset = document.getElementById('reset');
@@ -75,5 +78,7 @@ reset.addEventListener('click', function(e){
     ganador = undefined;
     console.clear();
     console.log(todos);
+    // ALERT
+    alert('SE REINICIO EL SORTEO');
 })
 
