@@ -46,6 +46,10 @@ submit.addEventListener('click', function(e){
 let start = document.getElementById('comenzar');
 start.addEventListener('click',function(e){
     e.preventDefault();
+    if(todos.length===0){
+        console.log('Debes ingresar al menos un participante');
+        return;
+    }
     let randomParticipante = Math.floor(Math.random() * todos.length);
     let ganador = todos[randomParticipante];
 
