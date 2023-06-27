@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: dodgerblue;
+}
+.header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+main{
+    margin: 25px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 25px;
+}
+#form input{
+    height: 30px;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: none;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: auto;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.sorteo{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.sorteo button{
+    width: 50%;
+    font-size: 1.5rem;
+    background-color: crimson;
+    border-radius: 50px;
+}
+#reset{
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: black;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+#congrats{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#congrats h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    padding: 50px;
+}
+#agregado{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#agregado p {
+    position: absolute;
+    bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
