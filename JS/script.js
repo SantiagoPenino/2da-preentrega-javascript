@@ -1,11 +1,24 @@
-nombreUsuario=prompt('Ingrese su nombre');
+let nombreUsuario = prompt('Ingrese su nombre');
 
 const todos = [];
+let participantePrompt;
 class participante{
     constructor (nombre, apellido){
         this.nombre = nombre;
         this.apellido = apellido;
     }
+}
+// CICLO PARA PEDIR 5 PARTICIPANTES
+for(i=5 ; i>0 ; i--){
+do {participantePrompt = prompt(`Ingresa nombre y apellido de un participante: (${i})`);
+}while(participantePrompt === '') 
+    console.clear();
+let [nombre, apellido] = participantePrompt.split(' ');
+    // CREACIÓN DEL PARTICIPANTE Y AGREGADO AL ARRAY
+    const ingresado = new participante(nombre, apellido);
+    todos.push(ingresado);
+    participantePrompt === '';
+    console.log(todos)
 }
 
 // VARIABLE PARA EL BOTON DE ENVIAR
@@ -76,6 +89,7 @@ reset.addEventListener('click', function(e){
     e.preventDefault();
     todos.splice(0,todos.length);
     ganador = undefined;
+    nombreUsuario = prompt('Ingrese su nombre');
     console.clear();
     console.log(todos);
     // ALERT
